@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct RecipeListApp: App {
+    let recipeService: RecipeServiceProtocol = APIRecipeService()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                recipeViewModel: RecipeViewModel(
+                    recipeService: recipeService
+                )
+            )
         }
     }
 }

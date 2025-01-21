@@ -29,9 +29,25 @@
 		21F510132D3EECE800A01968 /* RecipeListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		21F5106F2D3F435200A01968 /* Exceptions for "RecipeList" folder in "RecipeListTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/Models.swift,
+				Protocols/RecipeServiceProtocol.swift,
+				Services/APIRecipeService.swift,
+				"View Models/RecipeViewModel.swift",
+			);
+			target = 21F510082D3EECE800A01968 /* RecipeListTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		21F50FFB2D3EECE700A01968 /* RecipeList */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				21F5106F2D3F435200A01968 /* Exceptions for "RecipeList" folder in "RecipeListTests" target */,
+			);
 			path = RecipeList;
 			sourceTree = "<group>";
 		};
